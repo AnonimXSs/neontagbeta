@@ -1,2 +1,4 @@
-# neontagbeta
-Sjsjjd
+#NeontagBot
+TELEGRAMIN GELIŞMIŞ TAGGER BOTU
+
+DEVELOPED BY @FLEX DEVS
