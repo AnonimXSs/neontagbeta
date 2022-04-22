@@ -50,10 +50,10 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**Salam Mən Kaos Federationun Rəsmi Tagger Botuyam\nMəni Qruplarında Əlavə Edərək Qrupdakı Üyələri Cağıra Bilər**\n\n__Note: Qrupda Bota Boş Yetki Vermək Şərtdir__",
+  await event.reply("**Salam Mən Kaos Federationun Rəsmi Tagger Botuyam\nMəni Qruplarında Əlavə Edərək Qrupdakı Üyələri Cağıra Bilərəm\Əmrlər üçün ----> /help**\n\n__Note: Qrupda Bota Boş Yetki Vermək Şərtdir__",
                     buttons=(
                       [
-                       Button.url('➕ Məni Qrupa Əlavə Et ', 'https://t.me/KaosTaggerBot?startgroup=a')
+                       Button.url('➕ Məni Qrupa Əlavə Et ', 'https://t.me/KaosTaggerroBot?startgroup=a')
                       ],
                       [
                        Button.url('👤 Məni Yaradan', 'https://t.me/TheMrZeus'),
