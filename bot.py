@@ -40,7 +40,7 @@ async def cancel(event):
   global anlik_calisan
   anlik_calisan.remove(event.chat_id)
   
-  if event.chat_id in rxyzdev_tagTot:await event.respond(f"❌ Etiket işlemi durduruldu.\n\n Etiketlerin Sayı: {rxyzdev_tagTot[event.chat_id]} \n\n@NeonTagBot")
+  if event.chat_id in rxyzdev_tagTot:await event.respond(f"❌ Etiket işlemi durduruldu.\n\n Etiketlerin Sayı: {rxyzdev_tagTot[event.chat_id]} \n\n@NeonTaggerBot")
 
 
 @client.on(events.NewMessage(pattern="^/start$"))
@@ -48,10 +48,10 @@ async def start(event):
   await event.reply("**Salam Mən Kaos Federationun Rəsmi Tagger Botuyam\nMəni Qruplarında Əlavə Edərək Qrupdakı Üyələri Cağıra Bilər**\n\n__Note: Qrupda Bota Boş Yetki Vermək Şərtdir__",
                     buttons=(
                       [
-                       Button.url('➕ Məni Qrupa Əlavə Et ', 'https://t.me/NeonTag?startgroup=a')
+                       Button.url('➕ Məni Qrupa Əlavə Et ', 'https://t.me/KaosTaggerBot?startgroup=a')
                       ],
                       [
-                       Button.url('👤 Məni Yaradan', 'https://t.me/FlexDevs')
+                       Button.url('👤 Məni Yaradan', 'https://t.me/TheMrZeus')
                        Button.url('📣 Rəsmi Kanal', 'https://t.me/Kaos_Resmi')
                       ],
                     ),
@@ -59,7 +59,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Əmrlərim:\n\n/utag -text- Üyələri Çağıraram.\n/atag -text- Adminləri Çağıraram.\n/cancel - Prosesi Dayandıraram .\n❕ Bu Əmrlərdən Yalnız Administratorlar İstifadə Edə bilər**"
+  helptext = "**Əmrlərim:\n\n/utag -text- Üyələri Çağıraram.\n/atag -text- Adminləri Çağıraram.\n/kanallar - Rəsmi Kanallarımız\n/cancel - Prosesi Dayandıraram .\n❕ Bu Əmrlərdən Yalnız Administratorlar İstifadə Edə bilər**"
   await event.reply(helptext)
 
 @client.on(events.NewMessage())
