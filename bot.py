@@ -56,7 +56,7 @@ async def start(event):
                        Button.url('➕ Məni Qrupa Əlavə Et ', 'https://t.me/KaosTaggerBot?startgroup=a')
                       ],
                       [
-                       Button.url('👤 Məni Yaradan', 'https://t.me/TheMrZeus')
+                       Button.url('👤 Məni Yaradan', 'https://t.me/TheMrZeus'),
                        Button.url('📣 Rəsmi Kanal', 'https://t.me/Kaos_Resmi')
                       ],
                     ),
