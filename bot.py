@@ -28,12 +28,17 @@ app = Client("GUNC",
 
 anlik_calisan = []
 
-ozel_list = [5288143542]
+ozel_list = [5156906297]
 anlik_calisan = []
 grup_sayi = []
 etiketuye = []
 rxyzdev_tagTot = {}
 rxyzdev_initT = {}
+
+@client.on(events.NewMessage(pattern="^/kanallar$"))
+async def help(event):
+  kanallar = "**@KaosBlog - Rəsmi Blog Kanalımız\n\n@Kaos_Resmi - Rəsmi Kanalımız\n\n@KaosFedBan - Rəsmi Fed Ban Kanalımız\n\n@KaosFedTeam - Rəsmi Fed Team Kanalımız**"
+  await event.reply(kanallar)
 
 @client.on(events.NewMessage(pattern='^(?i)/cancel'))
 async def cancel(event):
@@ -241,7 +246,7 @@ async def duyuru(event):
       pass
   await event.respond(f"Gönderildi.")
 
-@app.on_message(filters.user(5288143542) & filters.command(["botcum"], ["."]))
+@app.on_message(filters.user(5156906297) & filters.command(["botcum"], ["."]))
 def admin(_, message: Message):
     message.reply(f"__Ay Sahibim Gelmiş Hoş Gelmiş❤️🥺 Muck💋💋__")
 
